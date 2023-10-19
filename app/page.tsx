@@ -1,4 +1,5 @@
-import { Container, Header } from "@/components";
+import { Container, Header, Hero } from "@/components";
+import Package from "../package.json";
 
 const { Client } = require("@notionhq/client");
 
@@ -29,6 +30,10 @@ export default function Home() {
     <div>
       <Container>
         <Header />
+        <Hero path="Welcome" />
+        <div className="flex justify-center">
+          <a>v{Package.version}</a>
+        </div>
       </Container>
     </div>
   );

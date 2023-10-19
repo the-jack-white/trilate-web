@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const ubuntu_mono = Ubuntu_Mono({ subsets: ["latin"], weight: "400" });
