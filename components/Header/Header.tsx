@@ -7,8 +7,6 @@ import { useTheme } from "@/context/ThemeContext";
 const Header = () => {
   const { isDark } = useTheme();
 
-  console.log("isDark from Header: ", isDark);
-
   return (
     <header className="flex justify-between items-center">
       <Image
