@@ -1,8 +1,8 @@
+import { Container, Header } from "@/components";
+
 const { Client } = require("@notionhq/client");
 
 export default function Home() {
-  console.log("TOKEN: ", process.env.NEXT_PUBLIC_NOTION_TOKEN);
-
   const notionHandler = async () => {
     try {
       const notion = new Client({ auth: process.env.NEXT_PUBLIC_NOTION_TOKEN });
@@ -25,5 +25,11 @@ export default function Home() {
 
   notionHandler();
 
-  return <div>Hello Home</div>;
+  return (
+    <div>
+      <Container>
+        <Header />
+      </Container>
+    </div>
+  );
 }
