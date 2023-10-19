@@ -32,7 +32,7 @@ export default function Home() {
         <Header />
         <Hero path="Welcome" />
         <div className="flex justify-center">
-          <a>v{Package.version}</a>
+          <a className="dark:text-slate-200">v{Package.version}</a>
         </div>
       </Container>
     </div>
