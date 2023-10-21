@@ -8,7 +8,7 @@ const ubuntu_mono = Ubuntu_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Trilate",
-  description: "Trilate | Where we try to not be late",
+  description: "Trilate | we try to never be late",
 };
 
 export default function RootLayout({
@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body className={ubuntu_mono.className}>
+      <body
+        className={`${ubuntu_mono.className} bg-slate-600 dark:bg-slate-200`}
+      >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
