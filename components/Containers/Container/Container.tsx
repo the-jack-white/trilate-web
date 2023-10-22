@@ -12,9 +12,9 @@ const Container = ({ children, fullscreen, menuToggle }: ContainerType) => {
     <main>
       <div
         className={
-          menuToggle
-            ? "left-[0px] flex animate-openmenu w-[224px] h-full p-5 pt-28 absolute flex-col bg-slate-200 border border-slate-600 dark:bg-slate-600 dark:border-slate-200"
-            : "animate-closemenu left-[-224px] flex w-[224px] h-full p-5 pt-28 absolute flex-col bg-slate-200 border border-slate-600 dark:bg-slate-600 dark:border-slate-200"
+          !menuToggle
+            ? "left-[-224px] flex w-[224px] h-full p-5 pt-28 absolute flex-col bg-slate-200 border border-slate-600 dark:bg-slate-600 dark:border-slate-200"
+            : "left-[0px] flex animate-openmenu w-[224px] h-full p-5 pt-28 absolute flex-col bg-slate-200 border border-slate-600 dark:bg-slate-600 dark:border-slate-200"
         }
       >
         <div className="flex flex-col h-full justify-between">

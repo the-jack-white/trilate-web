@@ -57,7 +57,7 @@ const Pricing = () => {
 
           <div className="w-full md:w-1/3 p-4 border border-slate-600 rounded-lg dark:border-slate-200">
             <h1 className="text-2xl uppercase dark:text-slate-200">
-              Enterprise :
+              Enterprise:
             </h1>
             <p className="text-sm md:text-base dark:text-slate-200">
               Tailored solutions for larger organizations with complex
