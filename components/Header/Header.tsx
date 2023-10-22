@@ -5,12 +5,17 @@ import { ThemeSwitch } from "..";
 import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 
-const Header = () => {
+type HeaderType = {
+  menuToggle: boolean;
+  menuToggleHandler: (arg0: boolean) => void;
+};
+
+const Header = ({ menuToggle, menuToggleHandler }: HeaderType) => {
   const { isDark } = useTheme();
 
   return (
     <header className="flex justify-between items-center">
-      <Link href="/">
+      <Link href="/" className="z-50">
         <Image
           src={`/images/logos/trilate_logo_name_${
             !isDark ? "black" : "white"
@@ -29,7 +34,12 @@ const Header = () => {
           <Link href="#">About</Link>
           <Link href="#">Book a session</Link>
         </div>
-        <a className="bi bi-list text-slate-600 text-xl md:hidden dark:text-slate-200"></a>
+        <a
+          className={`bi ${
+            !menuToggle ? "bi-list" : "bi-list-nested"
+          }  z-10 px-2 text-slate-600 text-xl md:hidden dark:text-slate-200`}
+          onClick={() => menuToggleHandler(!menuToggle)}
+        ></a>
       </div>
     </header>
   );
