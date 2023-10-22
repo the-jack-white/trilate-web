@@ -1,16 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 type InputProps = {
   placeholder: string;
-  name?: string;
+  name: string;
   type?: string;
   value?: string;
   reference?: any;
+  callback?: (value: string, key: string) => void;
 };
 
-const Input = ({ placeholder, name, type, reference }: InputProps) => {
+const Input = ({
+  placeholder,
+  name,
+  type,
+  reference,
+  callback,
+}: InputProps) => {
   const [showLabel, setShowLabel] = useState<boolean>(false);
 
   const callbackEventWatcher = (event: any) => {
@@ -21,6 +28,8 @@ const Input = ({ placeholder, name, type, reference }: InputProps) => {
     } else {
       setShowLabel(false);
     }
+
+    callback && callback(targetValue, name);
   };
 
   return (

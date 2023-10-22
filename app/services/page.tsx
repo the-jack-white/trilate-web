@@ -2,7 +2,7 @@ import { HeroContainer, KeyPoints, PageContainer } from "@/components";
 
 const Services = () => {
   return (
-    <PageContainer>
+    <PageContainer fullscreen>
       <HeroContainer
         path="Services"
         description="Explore our comprehensive range of digital services designed to boost your online presence and drive growth.

@@ -1,13 +1,21 @@
 type ButtonType = {
   title: string;
+  type?: "button" | "submit" | "reset";
+  disabled: boolean;
   callback?: () => void;
 };
 
-const Button = ({ title, callback }: ButtonType) => {
+const Button = ({ title, callback, type, disabled }: ButtonType) => {
   return (
     <button
+      disabled={disabled}
       onClick={callback}
-      className="border px-2 border-slate-600 uppercase rounded hover:bg-slate-600 hover:text-slate-200 dark:border-slate-200 dark:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-600"
+      type={type}
+      className={`border px-2 uppercase rounded ${
+        !disabled
+          ? "border-slate-600 hover:bg-slate-600 hover:text-slate-200 dark:border-slate-200 dark:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-600"
+          : "text-slate-300 dark:text-slate-400"
+      } `}
     >
       {title}
     </button>

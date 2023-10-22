@@ -6,6 +6,7 @@ import KeyPoints from "./KeyPoints/KeyPoints";
 import PageContainer from "./Containers/PageContainer/PageContainer";
 import HeroContainer from "./Containers/HeroContainer/HeroContainer";
 import Input from "./Input/Input";
+import Form from "./Form/Form";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   PageContainer,
   HeroContainer,
   Input,
+  Form,
 };
