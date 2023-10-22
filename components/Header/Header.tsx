@@ -27,7 +27,7 @@ const Header = ({ menuToggle, menuToggleHandler }: HeaderType) => {
       </Link>
 
       <div className="flex gap-4 md:gap-8">
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <div className="hidden md:flex md:gap-8 uppercase dark:text-slate-200">
           <Link href="/services">Services</Link>
           <Link href="pricing">Pricing</Link>
