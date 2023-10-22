@@ -15,8 +15,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        openmenu: "openmenu 1s ease-in",
-        closemenu: "closemenu 1s ease-in",
+        openmenu: "openmenu 0.5s ease-in",
+        closemenu: "closemenu 0.5s ease-in",
       },
       keyframes: {
         openmenu: {

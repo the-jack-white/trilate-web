@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Ubuntu_Mono } from "next/font/google";
+import { Gugi } from "next/font/google";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 
-const ubuntu_mono = Ubuntu_Mono({ subsets: ["latin"], weight: "400" });
+const gugi = Gugi({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Trilate",
@@ -18,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body
-        className={`${ubuntu_mono.className} bg-slate-600 dark:bg-slate-200`}
-      >
+      <body className={`${gugi.className} bg-slate-600 dark:bg-slate-200`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

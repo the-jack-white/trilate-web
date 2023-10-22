@@ -5,6 +5,7 @@ import Button from "./Button/Button";
 import KeyPoints from "./KeyPoints/KeyPoints";
 import PageContainer from "./Containers/PageContainer/PageContainer";
 import HeroContainer from "./Containers/HeroContainer/HeroContainer";
+import Input from "./Input/Input";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   KeyPoints,
   PageContainer,
   HeroContainer,
+  Input,
 };

@@ -32,7 +32,7 @@ const Header = ({ menuToggle, menuToggleHandler }: HeaderType) => {
           <Link href="/services">Services</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/about">About</Link>
-          <Link href="#">Book a session</Link>
+          <Link href="/booking">Book a session</Link>
         </div>
         <a
           className={`bi ${

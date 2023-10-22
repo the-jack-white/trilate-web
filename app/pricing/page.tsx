@@ -1,4 +1,5 @@
 import { Button, HeroContainer, PageContainer } from "@/components";
+import Link from "next/link";
 
 const Pricing = () => {
   return (
@@ -9,7 +10,9 @@ const Pricing = () => {
     Choose the plan that suits your requirements and budget. We offer the following packages:"
       >
         <div className="w-full flex justify-center">
-          <Button title="Get Started" />
+          <Link href="/booking">
+            <Button title="Get Started" />
+          </Link>
         </div>
         <div className="mt-4 flex flex-col md:flex-row gap-2 ">
           {/* THIS IS THE CARD */}
