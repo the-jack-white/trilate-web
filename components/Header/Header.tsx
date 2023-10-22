@@ -30,8 +30,8 @@ const Header = ({ menuToggle, menuToggleHandler }: HeaderType) => {
         {/* <ThemeSwitch /> */}
         <div className="hidden md:flex md:gap-8 uppercase dark:text-slate-200">
           <Link href="/services">Services</Link>
-          <Link href="pricing">Pricing</Link>
-          <Link href="#">About</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/about">About</Link>
           <Link href="#">Book a session</Link>
         </div>
         <a

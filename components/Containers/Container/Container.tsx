@@ -20,8 +20,8 @@ const Container = ({ children, fullscreen, menuToggle }: ContainerType) => {
         <div className="flex flex-col h-full justify-between">
           <div className="flex flex-col gap-4 uppercase dark:text-slate-200">
             <Link href="/services">Services</Link>
-            <Link href="pricing">Pricing</Link>
-            <Link href="#">About</Link>
+            <Link href="/pricing">Pricing</Link>
+            <Link href="/about">About</Link>
             <Link href="#">Book a session</Link>
           </div>
           <div className="flex justify-center">
