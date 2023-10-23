@@ -11,7 +11,7 @@ const Pricing = () => {
       >
         <div className="w-full flex justify-center">
           <Link href="/booking">
-            <Button title="Get Started" />
+            <Button title="Get Started" disabled={false} />
           </Link>
         </div>
         <div className="mt-4 flex flex-col md:flex-row gap-2 ">
